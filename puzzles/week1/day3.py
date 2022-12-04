@@ -13,7 +13,6 @@ def p2(inp):
         intersec = set(inp[i]).intersection(set(inp[i + 1])).intersection(set(inp[i + 2]))
         for item in intersec:
             res += ord(item) - 38 if item.isupper() else ord(item) - 96
-
     return res
 
 
